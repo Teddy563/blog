@@ -7,12 +7,12 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Fuwari',
-  subtitle: 'Demo Site',
+  title: '563',
+  subtitle: 'Media',
   lang: 'en',
   themeHue: 250,
   banner: {
-    enable: false,
+    enable: true,
     src: 'assets/images/demo-banner.png',
   },
 }
@@ -23,8 +23,8 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GitHub',
-      url: 'https://github.com/saicaca/fuwari',
+      name: 'Discord',
+      url: 'https://dsc.gg/563',
       external: true,
     },
   ],
@@ -36,19 +36,19 @@ export const profileConfig: ProfileConfig = {
   bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   links: [
     {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',
+      name: 'Instagram',
+      icon: 'fa6-brands:instagram',
       url: 'https://twitter.com',
     },
     {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
+      name: 'TikTok',
+      icon: 'fa6-brands:tiktok',
       url: 'https://store.steampowered.com',
     },
     {
-      name: 'GitHub',
-      icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      name: 'YouTube',
+      icon: 'fa6-brands:youtube',
+      url: 'https://youtube.com',
     },
   ],
 }
