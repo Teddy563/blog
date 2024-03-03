@@ -37,7 +37,7 @@ export const profileConfig: ProfileConfig = {
   links: [
     {
       name: 'Instagram',
-      icon: 'bi:instagram',
+      icon: 'fa6-brands:instagram',
       url: 'https://instagram.com',
     },
     {
