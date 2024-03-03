@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
   lang: 'en',
   themeHue: 250,
   banner: {
-    enable: true,
+    enable: false,
     src: 'assets/images/demo-banner.png',
   },
 }
@@ -31,14 +31,14 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  avatar: 'assets/images/avatar.png',
+  name: 'Teddy563',
+  bio: 'Unintentional Genius..',
   links: [
     {
       name: 'Instagram',
-      icon: 'fa6-brands:instagram',
-      url: 'https://twitter.com',
+      icon: 'bi:instagram',
+      url: 'https://instagram.com',
     },
     {
       name: 'TikTok',
