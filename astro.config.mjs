@@ -22,7 +22,7 @@ const oklchToHex = (str) => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://563.vercel.app',
+  site: 'https://563.media',
   base: "/",
   integrations: [
     tailwind(),
