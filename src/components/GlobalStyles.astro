@@ -181,7 +181,9 @@ color_set({
 @layer components {
 
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden transition;
+        @apply rounded overflow-hidden transition;
+        border-radius: var(--radius-large);
+        background-color: var(--card-bg); /* Use background-color for better clarity */
         background: rgba(var(--card-bg), 0.5);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
