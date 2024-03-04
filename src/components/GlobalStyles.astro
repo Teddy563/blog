@@ -46,12 +46,22 @@ color_set(colors)
 rainbow-light = linear-gradient(to right, oklch(0.80 0.10 0), oklch(0.80 0.10 30), oklch(0.80 0.10 60), oklch(0.80 0.10 90), oklch(0.80 0.10 120), oklch(0.80 0.10 150), oklch(0.80 0.10 180), oklch(0.80 0.10 210), oklch(0.80 0.10 240), oklch(0.80 0.10 270), oklch(0.80 0.10 300), oklch(0.80 0.10 330), oklch(0.80 0.10 360))
 rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30), oklch(0.70 0.10 60), oklch(0.70 0.10 90), oklch(0.70 0.10 120), oklch(0.70 0.10 150), oklch(0.70 0.10 180), oklch(0.70 0.10 210), oklch(0.70 0.10 240), oklch(0.70 0.10 270), oklch(0.70 0.10 300), oklch(0.70 0.10 330), oklch(0.70 0.10 360))
 
+:root.dark {
+  --page-bg-base-dark: oklch(0.16 0.014 var(--hue)); // Dark theme base color
+  --page-bg-pattern-overlay-dark: rgba(68, 76, 247, 0.5); // Adjust as needed for dark theme
+
+  background-color: oklch_fallback(var(--page-bg-base-dark));
+  background-image: linear-gradient(var(--page-bg-pattern-overlay-dark) 2px, transparent 20px), linear-gradient(to right, var(--page-bg-pattern-overlay-dark) 2px, transparent 20px);
+  background-size: 20px 20px;
+  opacity: 0.8;
+}
+
 :root
   --page-bg-base: oklch(0.95 0.01 var(--hue)); // Light theme base color
   --page-bg-pattern-overlay: rgba(68, 76, 247, 0.5); // Semi-transparent pattern color
 
   background-color: oklch_fallback(var(--page-bg-base));
-  background-image: linear-gradient(var(--page-bg-pattern-overlay) 1px, transparent 1px), linear-gradient(to right, var(--page-bg-pattern-overlay) 1px, transparent 1px);
+  background-image: linear-gradient(var(--page-bg-pattern-overlay) 2px, transparent 20px), linear-gradient(to right, var(--page-bg-pattern-overlay) 2px, transparent 20px);
   background-size: 20px 20px;
   opacity: 0.8;
 
