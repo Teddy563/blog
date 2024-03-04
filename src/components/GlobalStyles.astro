@@ -183,9 +183,9 @@ color_set({
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg2)] transition;
 
-        background: rgba(var(--card-bg2), 0.7);
-        border: 1px solid rgba(var(--card-bg2), 0.3);
-        backdrop-filter: blur(10px);
+        @apply background: rgba(var(--card-bg2), 0.7);
+        @apply border: 1px solid rgba(var(--card-bg2), 0.3);
+        @apply backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* WebKit prefix */
         -moz-backdrop-filter: blur(10px); /* Mozilla prefix */
         -o-backdrop-filter: blur(10px); /* Opera prefix */
