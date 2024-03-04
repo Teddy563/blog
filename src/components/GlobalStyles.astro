@@ -49,7 +49,7 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
 :root
   
   background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
-  background-size: 110px 110px; /* Adjusted for bigger squares */
+  background-size: 80px 80px; /* Adjusted for bigger squares */
   background-position: -125px -125px;
 
   --radius-large 1rem
@@ -183,7 +183,7 @@ color_set({
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
         backdrop-filter: blur(15px);
-        box-shadow: 2px 4px 6px rgba(0, 0, 0, .1), inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, .05), inset 0 0 0 2px rgba(255, 255, 255, 0.05);
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
