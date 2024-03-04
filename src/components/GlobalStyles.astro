@@ -52,6 +52,7 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
   background-size: 80px 80px; /* Adjusted for bigger squares */
   background-position: -145px -145px;
 
+  --tw-backdrop-blur: blur(15px);
   --radius-large 1rem
 
   --banner-height-home 60vh
@@ -180,7 +181,7 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] bg-opacity-70 backdrop-blur-lg transition;
+        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--tw-backdrop-blur)] bg-opacity-70 tw-backdrop-blur transition;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
