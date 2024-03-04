@@ -47,11 +47,9 @@ rainbow-light = linear-gradient(to right, oklch(0.80 0.10 0), oklch(0.80 0.10 30
 rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30), oklch(0.70 0.10 60), oklch(0.70 0.10 90), oklch(0.70 0.10 120), oklch(0.70 0.10 150), oklch(0.70 0.10 180), oklch(0.70 0.10 210), oklch(0.70 0.10 240), oklch(0.70 0.10 270), oklch(0.70 0.10 300), oklch(0.70 0.10 330), oklch(0.70 0.10 360))
 
 :root
-  --overlay-color-dark: rgba(68, 76, 247, 0.5); // Adjust as needed for dark theme, dynamically update based on hue
 
-  background-image: linear-gradient(var(--overlay-color-dark) 2px, transparent 2px), linear-gradient(to right, var(--overlay-color-dark) 2px, transparent 2px);
+  background-image: linear-gradient(var(--primary) 4px, transparent 2px), linear-gradient(to right, var(--primary) 4px, transparent 2px);
   background-size: 80px 80px; /* Adjusted for bigger squares */
-  opacity: 0.8;
 
   --radius-large 1rem
 
