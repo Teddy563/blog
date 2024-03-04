@@ -48,15 +48,10 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
 
 :root
   
-  background-image: linear-gradient(to bottom, rgba(var(--primary), 1), rgba(var(--primary), 0) 500px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
+  background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
   background-size: 100% calc(100% + 500px), 120px 120px; /* Adjust sizes accordingly */
   background-position: top, -160px -160px; /* Adjust positions accordingly */
   background-repeat: no-repeat; /* Prevent repetition */
-  position: fixed; /* Keep the background fixed at the top */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 
   --radius-large 1rem
 
