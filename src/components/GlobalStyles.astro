@@ -181,7 +181,10 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--tw-backdrop-blur)] bg-opacity-70 tw-backdrop-blur transition;
+        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] bg-opacity-70 backdrop-blur transition;
+        background: rgba(var(--card-bg), 0.5); /* This specific usage requires manual CSS if using a CSS var */
+        backdrop-filter: blur(15px); /* Ensure compatibility */
+        -webkit-backdrop-filter: blur(15px); /* Ensure compatibility */
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
