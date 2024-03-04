@@ -180,31 +180,12 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
+        @apply rounded-[var(--radius-large)] overflow-hidden transition;
 
-        position: relative; /* Needed for pseudo-element positioning */
-        z-index: 0; /* Ensure the content is above the pseudo-element */
-
-        /* Define the background color and border */
-        background: rgba(var(--card-bg), 1);
-        border: 1px solid rgba(var(--card-bg), 0.3);
-    }
-
-    /* Pseudo-element for the blurred background */
-    .card-base::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1; /* Place behind the content */
+        background-color: rgba(var(--card-bg), 0.3); /* Adjust opacity as needed */
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* WebKit prefix */
-        -moz-backdrop-filter: blur(10px); /* Mozilla prefix */
-        -o-backdrop-filter: blur(10px); /* Opera prefix */
-        -ms-backdrop-filter: blur(10px); /* Microsoft prefix */
-    }
+}
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
         @apply transition;
