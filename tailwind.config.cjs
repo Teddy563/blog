@@ -10,8 +10,7 @@ module.exports = {
       },
       backdropBlur: {
         lg: '20px', // Adjust based on your preference
-      }
-    },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
