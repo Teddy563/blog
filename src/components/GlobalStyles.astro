@@ -180,8 +180,7 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
-        --tw-backdrop-blur: blur(12px);
+        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] bg-opacity-50 backdrop-blur-lg transition;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
