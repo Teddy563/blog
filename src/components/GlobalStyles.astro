@@ -51,8 +51,6 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
   background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
   background-size: 90px 90px; /* Adjusted for bigger squares */
   background-position: -125px -125px;
-  backdrop-filter: blur(15px);
-  opacity: 0.7;
 
   --radius-large 1rem
 
@@ -183,8 +181,9 @@ color_set({
 @layer components {
 
     .card-base {
-        background-color: rgba(var(--card-bg), 0.7);
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
+        backdrop-filter: blur(15px);
+        opacity: 0.7;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
