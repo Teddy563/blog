@@ -8,9 +8,6 @@ module.exports = {
       fontFamily: {
         sans: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],
       },
-      backdropBlur: {
-        lg: '20px', // Adjust based on your preference
-      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
