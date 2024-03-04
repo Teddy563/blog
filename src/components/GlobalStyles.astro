@@ -179,6 +179,11 @@ color_set({
 @tailwind utilities;
 
 @layer components {
+    
+    background-color: rgba(var(--card-bg), 0.7); /* Adjust opacity as needed */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* WebKit prefix */
+
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
@@ -188,10 +193,6 @@ color_set({
     }
     .card-shadow {
         @apply drop-shadow-[0_2px_4px_rgba(0,0,0,0.005)]
-
-        background-color: rgba(var(--card-bg), 0.7); /* Adjust opacity as needed */
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px); /* WebKit prefix */
     }
     .link {
         @apply transition hover:bg-[var(--link-hover)] active:bg-[var(--link-active)] rounded-md p-1 -m-1;
