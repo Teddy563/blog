@@ -47,7 +47,7 @@ rainbow-light = linear-gradient(to right, oklch(0.80 0.10 0), oklch(0.80 0.10 30
 rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30), oklch(0.70 0.10 60), oklch(0.70 0.10 90), oklch(0.70 0.10 120), oklch(0.70 0.10 150), oklch(0.70 0.10 180), oklch(0.70 0.10 210), oklch(0.70 0.10 240), oklch(0.70 0.10 270), oklch(0.70 0.10 300), oklch(0.70 0.10 330), oklch(0.70 0.10 360))
 
 :root
-
+  
   background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
   background-size: 80px 80px; /* Adjusted for bigger squares */
   background-position: -40px -40px;
@@ -183,6 +183,7 @@ color_set({
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
 
         background: rgba(var(--card-bg), 0.7);
+        border: 1px solid rgba(var(--card-bg), 0.3);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* WebKit prefix */
         -moz-backdrop-filter: blur(10px); /* Mozilla prefix */
