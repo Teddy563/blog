@@ -178,14 +178,12 @@ color_set({
 
 @layer components {
     .blur-bg {
-        background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
-        background-size: 80px 80px; /* Adjusted for bigger squares */
-        background-position: -145px -145px;
-        background-color: rgba(var(--card-bg), 0.5);
-        box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
-        border-radius: 7px;
-        backdrop-filter: blur(20px);
-        
+        background: rgba(var(--card-bg), 0.49);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);        
     }
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden transition;
