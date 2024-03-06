@@ -186,7 +186,10 @@ color_set({
         border: 1px solid rgba(255, 255, 255, 0.3);        
     }
     .card-base {
-        @apply rounded-[var(--radius-large)] bg-[var(--page-bg)/50] backdrop-blur-xl overflow-hidden transition;
+        @apply rounded-[var(--radius-large)] bg-[var(--page-bg)] backdrop-blur-md overflow-hidden transition;
+        background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
+        background-size: 80px 80px; /* Adjusted for bigger squares */
+        background-position: -145px -145px;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
