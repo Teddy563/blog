@@ -182,7 +182,7 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)];
+        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] bg-opacity-70 transition;
         backdrop-filter: blur(16px) saturate(180%);
         -webkit-backdrop-filter: blur(16px) saturate(180%);
         background-color: rgba(var(--card-glass), 0.75);
