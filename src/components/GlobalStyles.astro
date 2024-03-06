@@ -186,9 +186,12 @@ color_set({
         border: 1px solid rgba(255, 255, 255, 0.3);        
     }
     .card-base {
-        @apply rounded-[var(--radius-large)] bg-[var(--page-bg)] backdrop-blur-md overflow-hidden transition;
+        @apply rounded-lg bg-clip-padding backdrop-blur-md overflow-hidden transition-all; /* Example using Tailwind's utilities */
+        /* Custom properties and complex backgrounds defined outside @apply */
+        border-radius: var(--radius-large); /* Assuming this is a custom value, replace rounded-lg if necessary */
+        background-color: var(--page-bg); /* Ensure this custom property is defined */
         background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
-        background-size: 80px 80px; /* Adjusted for bigger squares */
+        background-size: 80px 80px;
         background-position: -145px -145px;
     }
 
