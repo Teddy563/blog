@@ -172,7 +172,12 @@ color_set({
     --os-handle-bg-hover: var(--scrollbar-bg-hover-light);
     --os-handle-bg-active: var(--scrollbar-bg-active-light);
 
-
+.blur-bg {
+    background-color: rgba(var(--card-bg), 0);
+    box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
+    border-radius: 7px;
+    backdrop-filter: blur(20px);
+}
 </style>
 <style is:global>
 @tailwind base;
