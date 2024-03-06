@@ -186,9 +186,7 @@ color_set({
         border: 1px solid rgba(255, 255, 255, 0.3);        
     }
     .card-base {
-        @apply rounded-lg bg-clip-padding backdrop-blur-md overflow-hidden transition-all; /* Example using Tailwind's utilities */
-        /* Custom properties and complex backgrounds defined outside @apply */
-        border-radius: var(--radius-large); /* Assuming this is a custom value, replace rounded-lg if necessary */
+        @apply rounded-[var(--radius-large)] bg-[var(--page-bg)] backdrop-blur-md overflow-hidden transition;
     }
 
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
