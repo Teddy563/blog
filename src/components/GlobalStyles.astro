@@ -48,13 +48,6 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
 
 :root
 
-  .blur-bg {
-        background-color: rgba(var(--card-bg), 0);
-        box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
-        border-radius: 7px;
-        backdrop-filter: blur(20px);
-  }
-
   background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
   background-size: 80px 80px; /* Adjusted for bigger squares */
   background-position: -145px -145px;
@@ -68,7 +61,6 @@ color_set({
   --primary: oklch(0.70 0.14 var(--hue)) oklch(0.75 0.14 var(--hue))
   --page-bg: oklch(0.95 0.01 var(--hue)) oklch(0.16 0.014 var(--hue))
   --card-bg: white oklch(0.23 0.015 var(--hue))
-  --card-glass: oklch(0.23 0.015 var(--hue)) oklch(0.23 0.015 var(--hue))
 
   --btn-content: oklch(0.55 0.12 var(--hue)) oklch(0.75 0.1 var(--hue))
 
@@ -126,6 +118,12 @@ color_set({
   --display-dark-icon: 0 1
 })
 
+  .blur-bg {
+        background-color: rgba(var(--card-bg), 0.5);
+        box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
+        border-radius: 7px;
+        backdrop-filter: blur(20px);
+  }
 
 /* some global styles */
 ::selection
