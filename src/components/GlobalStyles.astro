@@ -122,12 +122,6 @@ color_set({
 ::selection
   background-color: var(--selection-bg)
 
-.blur-bg
-  background-color: rgba(var(--card-bg), 0.5);
-  box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
-  border-radius: 7px;
-  backdrop-filter: blur(20px);
-
 .scrollbar-base.os-scrollbar
   transition: width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s, visibility 0.15s, top 0.15s, right 0.15s, bottom 0.15s, left 0.15s;
   pointer-events: unset;
@@ -183,6 +177,12 @@ color_set({
 @tailwind utilities;
 
 @layer components {
+    .blur-bg {
+        background-color: rgba(var(--card-bg), 0.5);
+        box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
+        border-radius: 7px;
+        backdrop-filter: blur(20px);
+    }
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
