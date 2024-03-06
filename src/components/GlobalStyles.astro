@@ -47,7 +47,14 @@ rainbow-light = linear-gradient(to right, oklch(0.80 0.10 0), oklch(0.80 0.10 30
 rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30), oklch(0.70 0.10 60), oklch(0.70 0.10 90), oklch(0.70 0.10 120), oklch(0.70 0.10 150), oklch(0.70 0.10 180), oklch(0.70 0.10 210), oklch(0.70 0.10 240), oklch(0.70 0.10 270), oklch(0.70 0.10 300), oklch(0.70 0.10 330), oklch(0.70 0.10 360))
 
 :root
-  
+
+  .blur-bg {
+        background-color: rgba(var(--card-bg), 0);
+        box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
+        border-radius: 7px;
+        backdrop-filter: blur(20px);
+  }
+
   background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
   background-size: 80px 80px; /* Adjusted for bigger squares */
   background-position: -145px -145px;
@@ -172,12 +179,6 @@ color_set({
     --os-handle-bg-hover: var(--scrollbar-bg-hover-light);
     --os-handle-bg-active: var(--scrollbar-bg-active-light);
 
-.blur-bg {
-    background-color: rgba(var(--card-bg), 0);
-    box-shadow: 0.5px 0.5px 1px rgb(255, 255, 255), -0.5px -0.5px 1px rgb(255, 255, 255);     
-    border-radius: 7px;
-    backdrop-filter: blur(20px);
-}
 </style>
 <style is:global>
 @tailwind base;
