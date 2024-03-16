@@ -8,7 +8,7 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'Grow Creators',
-  subtitle: '',
+  subtitle: 'Home',
   lang: 'en',
   themeHue: 150,
   banner: {
