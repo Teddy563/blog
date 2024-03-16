@@ -57,7 +57,7 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
 color_set({
   --primary: oklch(77.22% 0.223 147.9)
   --page-bg: oklch(16% 0.028 149.67)
-  --card-bg: oklch(23% 0.015 149.11 / 80%)
+  --card-bg: oklch(23% 0.015 149.11 / 60%)
 
   --btn-content: oklch(0.72 0.20 148)
 
@@ -178,7 +178,7 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition backdrop-filter backdrop-blur-lg;
+        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
         @apply transition;
