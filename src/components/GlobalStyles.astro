@@ -55,47 +55,48 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
   --content-delay 150ms
 
 color_set({
-  --primary: oklch(72.63% 0.21 148.03)
-  --page-bg: oklch(10.53% 0.014 149.67)
-  --card-bg: oklch(23% 0.015 149.11)
+  --primary: oklch(0.70 0.14 var(--hue)) oklch(0.75 0.14 var(--hue))
+  --page-bg: oklch(0.95 0.01 var(--hue)) oklch(0.16 0.014 var(--hue))
+  --card-bg: white oklch(0.23 0.015 var(--hue))
 
-  --btn-content: oklch(72.63% 0.21 148.03) /* Vibrant green for button text */
+  --btn-content: oklch(0.55 0.12 var(--hue)) oklch(0.75 0.1 var(--hue))
 
-  --btn-regular-bg: oklch(0.3 0.03 var(--hue)) oklch(0.35 0.04 var(--hue)) /* Dark green for regular buttons */
-  --btn-regular-bg-hover: oklch(0.32 0.06 var(--hue)) oklch(0.37 0.045 var(--hue)) /* Dark green on hover */
-  --btn-regular-bg-active: oklch(0.34 0.09 var(--hue)) oklch(0.39 0.05 var(--hue)) /* Dark green on active */
+  --btn-regular-bg: oklch(0.95 0.025 var(--hue)) oklch(0.33 0.035 var(--hue))
+  --btn-regular-bg-hover: oklch(0.9 0.05 var(--hue)) oklch(0.38 0.04 var(--hue))
+  --btn-regular-bg-active: oklch(0.85 0.08 var(--hue)) oklch(0.43 0.045 var(--hue))
 
-  --btn-plain-bg-hover: oklch(0.3 0.03 var(--hue)) oklch(0.31 0.02 var(--hue)) /* Light hover for plain buttons */
-  --btn-plain-bg-active: oklch(0.32 0.015 var(--hue)) oklch(0.33 0.02 var(--hue)) /* Slightly brighter on active */
+  --btn-plain-bg-hover: oklch(0.95 0.025 var(--hue)) oklch(0.17 0.017 var(--hue))
+  --btn-plain-bg-active: oklch(0.98 0.01 var(--hue)) oklch(0.19 0.017 var(--hue))
 
-  --btn-card-bg-hover: oklch(0.2 0.01 var(--hue)) oklch(0.35 0.035 var(--hue)) /* Hover background for card buttons */
-  --btn-card-bg-active: oklch(0.3 0.035 var(--hue)) oklch(0.37 0.04 var(--hue)) /* Active background for card buttons */
+  --btn-card-bg-hover: oklch(0.98 0.005 var(--hue)) oklch(0.3 0.03 var(--hue))
+  --btn-card-bg-active: oklch(0.9 0.03 var(--hue)) oklch(0.35 0.035 var(--hue))
 
-  --enter-btn-bg: var(--btn-regular-bg) /* Use regular button background for enter buttons */
-  --enter-btn-bg-hover: var(--btn-regular-bg-hover) /* Use regular button hover for enter buttons */
-  --enter-btn-bg-active: var(--btn-regular-bg-active) /* Use regular button active for enter buttons */
+  --enter-btn-bg: var(--btn-regular-bg)
+  --enter-btn-bg-hover: var(--btn-regular-bg-hover)
+  --enter-btn-bg-active: var(--btn-regular-bg-active)
 
-  --deep-text: oklch(0.9 0.45 var(--hue)) /* Bright and vibrant green for deep text */
+  --deep-text: oklch(0.25 0.02 var(--hue))
 
-  --title-active: oklch(0.85 0.45 var(--hue)) /* Bright green for active titles */
+  --title-active: oklch(0.6 0.1 var(--hue))
 
-  --line-divider: oklch(0.2 0.1 var(--hue)) /* Dark lines for dividers */
-  --line-color: oklch(0.25 0.12 var(--hue)) /* Slightly brighter lines */
-  --meta-divider: oklch(0.3 0.25 var(--hue)) /* Brighter lines for meta dividers */
+  --line-divider: black(0.08) white(0.08)
 
-  --inline-code-bg: var(--btn-regular-bg) /* Background for inline code matches button background */
-  --inline-code-color: var(--btn-content) /* Inline code text color matches button content color */
-  --selection-bg: oklch(0.8 0.25 var(--hue)) oklch(0.85 0.3 var(--hue)) /* Selection background */
-  --codeblock-selection: oklch(0.85 0.3 var(--hue)) /* Codeblock selection background */
-  --codeblock-bg: oklch(0.25 0.02 var(--hue)) oklch(0.3 0.02 var(--hue)) /* Codeblock background */
+  --line-color: black(0.1) white(0.1)
+  --meta-divider: black(0.2) white(0.2)
 
-  --license-block-bg: oklch(0.2 0.035 var(--hue)) var(--codeblock-bg) /* License block background */
+  --inline-code-bg: var(--btn-regular-bg)
+  --inline-code-color: var(--btn-content)
+  --selection-bg: oklch(0.90 0.05 var(--hue)) oklch(0.40 0.08 var(--hue))
+  --codeblock-selection: oklch(0.40 0.08 var(--hue))
+  --codeblock-bg: oklch(0.2 0.015 var(--hue)) oklch(0.17 0.015 var(--hue))
 
-  --link-underline: oklch(0.85 0.4 var(--hue)) oklch(0.9 0.45 var(--hue)) /* Underline for links */
-  --link-hover: oklch(0.87 0.375 var(--hue)) oklch(0.92 0.45 var(--hue)) /* Hover for links */
-  --link-active: oklch(0.89 0.4 var(--hue)) oklch(0.94 0.47 var(--hue)) /* Active state for links */
+  --license-block-bg: black(0.03) var(--codeblock-bg)
 
-  --float-panel-bg: oklch(0.3 0.02 var(--hue)) /* Background for floating panels */
+  --link-underline: oklch(0.93 0.04 var(--hue)) oklch(0.40 0.08 var(--hue))
+  --link-hover: oklch(0.95 0.025 var(--hue)) oklch(0.40 0.08 var(--hue))
+  --link-active: oklch(0.90 0.05 var(--hue)) oklch(0.35 0.07 var(--hue))
+
+  --float-panel-bg: white oklch(0.19 0.015 var(--hue))
 
   --scrollbar-bg-light: black(0.4)
   --scrollbar-bg-hover-light: black(0.5)
