@@ -12,7 +12,7 @@ import svelte from "@astrojs/svelte"
 import swup from '@swup/astro';
 
 const oklchToHex = (str) => {
-  const DEFAULT_HUE = 250
+  const DEFAULT_HUE = 150
   const regex = /-?\d+(\.\d+)?/g
   const matches = str.string.match(regex)
   const lch = [matches[0], matches[1], DEFAULT_HUE]
@@ -28,7 +28,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     swup({
-      theme: false,
+      theme: true,
       animationClass: 'transition-',
       containers: ['main'],
       smoothScrolling: true,
@@ -46,7 +46,7 @@ export default defineConfig({
       },
     }),
     Compress({
-      Image: false,
+      Image: true,
     }),
     svelte(),
   ],
