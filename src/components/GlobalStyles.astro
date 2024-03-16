@@ -47,15 +47,12 @@ rainbow-light = linear-gradient(to right, oklch(0.80 0.10 0), oklch(0.80 0.10 30
 rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30), oklch(0.70 0.10 60), oklch(0.70 0.10 90), oklch(0.70 0.10 120), oklch(0.70 0.10 150), oklch(0.70 0.10 180), oklch(0.70 0.10 210), oklch(0.70 0.10 240), oklch(0.70 0.10 270), oklch(0.70 0.10 300), oklch(0.70 0.10 330), oklch(0.70 0.10 360))
 
 :root
-
-  background-image: linear-gradient(var(--primary) 2px, transparent 2px), linear-gradient(to right, var(--primary) 2px, transparent 2px);
-  background-size: 80px 80px; /* Adjusted for bigger squares */
-  background-position: -145px -145px;
-
   --radius-large 1rem
 
   --banner-height-home 60vh
   --banner-height 40vh
+
+  --content-delay 150ms
 
 color_set({
   --primary: oklch(0.70 0.14 var(--hue)) oklch(0.75 0.14 var(--hue))
@@ -95,6 +92,7 @@ color_set({
 
   --license-block-bg: black(0.03) var(--codeblock-bg)
 
+  --link-underline: oklch(0.93 0.04 var(--hue)) oklch(0.40 0.08 var(--hue))
   --link-hover: oklch(0.95 0.025 var(--hue)) oklch(0.40 0.08 var(--hue))
   --link-active: oklch(0.90 0.05 var(--hue)) oklch(0.35 0.07 var(--hue))
 
@@ -117,6 +115,7 @@ color_set({
   --display-light-icon: 1 0
   --display-dark-icon: 0 1
 })
+
 
 /* some global styles */
 ::selection
@@ -170,6 +169,7 @@ color_set({
     --os-handle-bg-hover: var(--scrollbar-bg-hover-light);
     --os-handle-bg-active: var(--scrollbar-bg-active-light);
 
+
 </style>
 <style is:global>
 @tailwind base;
@@ -178,9 +178,8 @@ color_set({
 
 @layer components {
     .card-base {
-        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] backdrop-blur-md backdrop-opacity-60 md:backdrop-filter-none transition;
+        @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
-
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
         @apply transition;
     }
@@ -219,6 +218,11 @@ color_set({
         text-[var(--btn-content)] dark:text-white/75
     }
 
+    .link-underline {
+        @apply transition underline decoration-2 decoration-dashed decoration-[var(--link-underline)]
+        hover:decoration-[var(--link-hover)] active:decoration-[var(--link-active)] underline-offset-[0.25rem]
+    }
+
     .text-90 {
         @apply text-black/90 dark:text-white/90
     }
@@ -234,5 +238,42 @@ color_set({
     .text-25 {
         @apply text-black/25 dark:text-white/25
     }
+
+    html.is-changing .transition-fade {
+        @apply transition-all duration-200
+    }
+    html.is-animating .transition-fade {
+        @apply opacity-0 translate-y-4
+    }
 }
+
+@keyframes fade-in-up {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.onload-animation {
+    opacity: 0;
+    animation: 300ms fade-in-up;
+    animation-fill-mode: forwards;
+}
+#top-row {
+    animation-delay: 0ms
+}
+#sidebar {
+    animation-delay: 100ms
+}
+#content-wrapper {
+    animation-delay: var(--content-delay);
+}
+#footer {
+    animation-delay: 400ms;
+}
+
+
 </style>
