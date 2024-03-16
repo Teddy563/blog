@@ -1,5 +1,5 @@
 export function getDefaultHue(): number {
-  const fallback = '250'
+  const fallback = '150'
   const configCarrier = document.getElementById('config-carrier')
   return parseInt(configCarrier?.dataset.hue || fallback)
 }
