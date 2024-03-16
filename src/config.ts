@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
   lang: 'en',
   themeHue: 150,
   banner: {
-    enable: true,
+    enable: false,
     src: 'assets/images/demo-banner.png',
   },
 }
@@ -23,8 +23,8 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GitHub',
-      url: 'https://github.com/saicaca/fuwari',
+      name: 'Discord',
+      url: 'https://dsc.gg/growgpt',
       external: true,
     },
   ],
@@ -32,8 +32,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/demo-avatar.png',
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  name: 'Teddy563 / b3arbu',
+  bio: 'Unintentional genius..',
   links: [
     {
       name: 'Twitter',
