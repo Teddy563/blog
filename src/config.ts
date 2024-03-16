@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
   lang: 'en',
   themeHue: 150,
   banner: {
-    enable: false,
+    enable: true,
     src: 'assets/images/demo-banner.png',
   },
 }
@@ -27,28 +27,43 @@ export const navBarConfig: NavBarConfig = {
       url: 'https://dsc.gg/growgpt',
       external: true,
     },
+    {
+      name: 'Patreon',
+      url: 'https://dsc.gg/growgpt',
+      external: true,
+    },
   ],
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',
+  avatar: 'assets/images/new-avatar.webp',
   name: 'Teddy563 / b3arbu',
   bio: 'Unintentional genius..',
   links: [
     {
+      name: 'Instagram',
+      icon: 'fa6-brands:instagram',
+      url: 'https://instagram.com/b3arbu',
+    },
+    {
+      name: 'TikTok',
+      icon: 'fa6-brands:tiktok',
+      url: 'https://instagram.com/b3arbu',
+    },
+    {
+      name: 'YouTube',
+      icon: 'fa6-brands:youtube',
+      url: 'https://instagram.com/b3arbu',
+    },
+    {
       name: 'Twitter',
       icon: 'fa6-brands:twitter',
-      url: 'https://twitter.com',
+      url: 'https://instagram.com/b3arbu',
     },
     {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
-    },
-    {
-      name: 'GitHub',
-      icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      name: 'Discord',
+      icon: 'fa6-brands:discord',
+      url: 'https://instagram.com/b3arbu',
     },
   ],
 }
