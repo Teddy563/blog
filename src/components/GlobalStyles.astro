@@ -120,6 +120,9 @@ color_set({
 /* some global styles */
 ::selection
   background-color: var(--selection-bg)
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #051107 20%, #051107 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #051107 20%, #051107 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#071e0b 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #071e0b 8px, #051107 8px) -4px 0;
+  background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
 
 .scrollbar-base.os-scrollbar
   transition: width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s, visibility 0.15s, top 0.15s, right 0.15s, bottom 0.15s, left 0.15s;
