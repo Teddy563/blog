@@ -21,7 +21,16 @@ let links: NavBarLink[] = navBarConfig.links.map((item: NavBarLink | LinkPreset)
     "card-base sticky top-0 overflow-visible max-w-[var(--page-width)] h-[4.5rem] rounded-t-none mx-auto flex items-center justify-between px-4"]}>
     <a href="/" class="btn-plain h-[3.25rem] px-5 font-bold rounded-lg active:scale-95">
         <div class="flex flex-row text-[var(--primary)] items-center text-md">
-            <Icon name="material-symbols:home-outline-rounded" size={"1.75rem"} class="mb-1 mr-2" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M106.256 158.115C101.583 165.808 90.417 165.808 85.7438 158.115L25.0729 58.2297C20.2154 50.2327 25.9725 40 35.3291 40L156.671 40C166.028 40 171.785 50.2327 166.927 58.2297L106.256 158.115Z" fill="url(#paint0_linear_45_3)"/>
+                <defs>
+                <linearGradient id="paint0_linear_45_3" x1="96" y1="29.0001" x2="95.9692" y2="166" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00FF67"/>
+                <stop offset="1" stop-color="#048C3B"/>
+                <stop offset="1" stop-color="#00742F"/>
+                </linearGradient>
+                </defs>
+            </svg>
             {siteConfig.title}
         </div>
     </a>
