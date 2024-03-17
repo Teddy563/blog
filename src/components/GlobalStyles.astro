@@ -75,28 +75,28 @@ color_set({
   --enter-btn-bg-hover: var(--btn-regular-bg-hover)
   --enter-btn-bg-active: var(--btn-regular-bg-active)
 
-  --deep-text: oklch(0.25 0.02 150)
+  --deep-text: oklch(0.25 0.02 150) oklch(0.25 0.02 150)
 
-  --title-active: oklch(0.6 0.1 150)
+  --title-active: oklch(0.6 0.1 150) oklch(0.6 0.1 150)
 
-  --line-divider: white(0.08)
+  --line-divider: white(0.08) white(0.08)
 
-  --line-color: white(0.1)
-  --meta-divider: white(0.2)
+  --line-color: white(0.1) white(0.1)
+  --meta-divider: white(0.2) white(0.2)
 
   --inline-code-bg: var(--btn-regular-bg)
   --inline-code-color: var(--btn-content)
-  --selection-bg: oklch(0.40 0.08 150)
-  --codeblock-selection: oklch(0.40 0.08 150)
-  --codeblock-bg: oklch(0.17 0.015 150)
+  --selection-bg: oklch(0.40 0.08 150) oklch(0.40 0.08 150)
+  --codeblock-selection: oklch(0.40 0.08 150) oklch(0.40 0.08 150)
+  --codeblock-bg: oklch(0.17 0.015 150) oklch(0.17 0.015 150)
 
-  --license-block-bg: var(--codeblock-bg)
+  --license-block-bg: var(--codeblock-bg) var(--codeblock-bg)
 
-  --link-underline: oklch(0.40 0.08 150)
-  --link-hover: oklch(0.40 0.08 150)
-  --link-active: oklch(0.35 0.07 150)
+  --link-underline: oklch(0.40 0.08 150) oklch(0.40 0.08 150)
+  --link-hover: oklch(0.40 0.08 150) oklch(0.40 0.08 150)
+  --link-active: oklch(0.35 0.07 150) oklch(0.35 0.07 150)
 
-  --float-panel-bg: oklch(0.19 0.015 150)
+  --float-panel-bg: oklch(0.19 0.015 150) oklch(0.19 0.015 150)
 
   --scrollbar-bg-light: black(0.4)
   --scrollbar-bg-hover-light: black(0.5)
@@ -120,7 +120,6 @@ color_set({
 /* some global styles */
 ::selection
   background-color: var(--selection-bg)
-  backdrop-filter: blur(16px);
 
 .scrollbar-base.os-scrollbar
   transition: width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s, visibility 0.15s, top 0.15s, right 0.15s, bottom 0.15s, left 0.15s;
