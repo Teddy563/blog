@@ -23,12 +23,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'Discord',
-      url: 'https://dsc.gg/growgpt',
-      external: true,
-    },
-    {
-      name: 'Patreon',
+      name: 'Community',
       url: 'https://dsc.gg/growgpt',
       external: true,
     },
