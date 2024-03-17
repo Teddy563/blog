@@ -23,12 +23,12 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GrowGPT',
+      name: 'Community',
       url: 'https://dsc.gg/growgpt',
       external: true,
     },
     {
-      name: 'Community',
+      name: 'GrowGPT',
       url: 'https://dsc.gg/growgpt',
       external: true,
     },
