@@ -28,11 +28,17 @@ color_set(colors)
   @supports (color: oklch(0 0 0))
     :root
       for key, value in colors
+        {key}: value[0]
+    :root.dark
+      for key, value in colors
         if length(value) > 1
           {key}: value[1]
   /* provide fallback color for oklch */
   @supports not (color: oklch(0 0 0))
     :root
+      for key, value in colors
+        {key}: oklch_fallback(value[0])
+    :root.dark
       for key, value in colors
         if length(value) > 1
           {key}: oklch_fallback(value[1])
