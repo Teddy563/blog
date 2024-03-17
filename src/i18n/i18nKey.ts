@@ -2,7 +2,8 @@ enum I18nKey {
   home = 'home',
   about = 'about',
   archive = 'archive',
-
+  growgpt = 'growgpt',
+  
   tags = 'tags',
   categories = 'categories',
   recentPosts = 'recentPosts',
