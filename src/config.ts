@@ -33,7 +33,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/new-avatar.webp',
   name: 'Teddy563 / b3arbu',
-  bio: 'Unintentional genius..',
+  bio: '',
   links: [
     {
       name: 'Instagram',
