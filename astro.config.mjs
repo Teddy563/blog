@@ -46,7 +46,7 @@ export default defineConfig({
       },
     }),
     Compress({
-      Image: false,
+      Image: true,
     }),
     svelte(),
   ],
