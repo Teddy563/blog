@@ -1,4 +1,4 @@
-# GrowCreators: Revolutionize Growth 📈
+# GrowCreators: Empowering Growth 📈
 
 ![GrowCreators Banner](./growcreators-banner.png)
 
