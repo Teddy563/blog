@@ -35,21 +35,21 @@ For those craving even more power, GrowGPT Premium unleashes the full potential 
 GrowGPT is more than just an AI tool; it's a partner in your creative journey. Whether you're sketching out the next viral blog post, designing eye-catching visuals, or engaging with your audience in meaningful ways, GrowGPT stands by your side, ready to make the process smoother, more innovative, and more enjoyable.
 
 ## **Roadmap**
-> - ✅ Offer GPT-4 for free to users.
-> - ✅ Create an easy-to-use Discord interface for GPT-4.
-> - ✅ Add brainstorming and mind mapping tools.
-> - ✅ Image generation with Stable Diffusion and others.
-> - ⬜ Image creation with DALL-E 2, DALL-E 3, and Midjourney.
-> - ✅ Offer image description services.
-> - ⬜ Develop personalized learning modules.
-> - ✅ Summarize YouTube videos concisely.
-> - ⬜ Introduce mental health support features.
-> - ⬜ Collect user feedback for improvements.
-> - ⬜ Create a Discord community forum.
-> - ⬜ Support multi-agent conversations.
-> - ⬜ Offer advanced AI customization.
-> - ⬜ Implement voice-command functionality.
-> - ⬜ Enable auto-posting to social media.
-> - ⬜ Add video generation capabilities.
+- ✅ Offer GPT-4 for free to users.
+- ✅ Create an easy-to-use Discord interface for GPT-4.
+- ✅ Add brainstorming and mind mapping tools.
+- ✅ Image generation with Stable Diffusion and others.
+- ⬜ Image creation with DALL-E 2, DALL-E 3, and Midjourney.
+- ✅ Offer image description services.
+- ⬜ Develop personalized learning modules.
+- ✅ Summarize YouTube videos concisely.
+- ⬜ Introduce mental health support features.
+- ⬜ Collect user feedback for improvements.
+- ⬜ Create a Discord community forum.
+- ⬜ Support multi-agent conversations.
+- ⬜ Offer advanced AI customization.
+- ⬜ Implement voice-command functionality.
+- ⬜ Enable auto-posting to social media.
+- ⬜ Add video generation capabilities.
 
-**Embrace the future of content creation with GrowGPT—where your imagination is the only limit.** 🌌✨
+**Embrace the future of content creation with GrowGPT — where your imagination is the only limit.** 🌌✨
