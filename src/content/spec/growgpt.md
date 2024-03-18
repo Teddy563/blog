@@ -1,21 +1,8 @@
 # GrowGPT: Unleash Your Creative Genius 🚀
 
-![GrowGPT Banner](./growgpt-banner.png "GrowGPT")
+![GrowGPT Banner](./growgpt-banner.png)
 
 Welcome to **GrowGPT**, the revolutionary AI companion that's transforming the content creation landscape. Designed for creators who dare to dream big, GrowGPT combines the power of cutting-edge AI with the magic of visual storytelling, making it the only tool you'll need to bring your content to life. 
-
-## **Key Features**
-
-### **Versatile Content Creation**
-At the heart of GrowGPT lies a dynamic duo of text and image generation capabilities. Start with GPT-4's advanced language model for compelling written content and then bring your words to life with stunning, AI-generated images. All of this is available at no cost, offering unparalleled creative freedom.
-
-### **Engage in Conversation**
-Dive deeper into your creative process with GrowGPT's interactive chat feature. Powered by GPT-4, it's like having a brainstorming session with the most intelligent, creative mind imaginable, ready to help you refine your ideas or overcome any creative block.
-
-### **Premium Version**
-For those craving even more power, GrowGPT Premium unleashes the full potential of AI creativity:
-- **Access to Advanced Models:** Elevate your content with access to Claude-3-Opus and GPT-4-Turbo, offering enhanced writing styles, deeper insights, and more nuanced content generation.
-- **Exclusive Features:** Premium users enjoy advanced customization, prioritized processing, and additional tools designed to perfect the content creation process.
 
 ## **Benefits**
 
@@ -51,5 +38,10 @@ GrowGPT is more than just an AI tool; it's a partner in your creative journey. W
 - ⬜ Implement voice-command functionality.
 - ⬜ Enable auto-posting to social media.
 - ⬜ Add video generation capabilities.
+
+## **Premium Version**
+For those craving even more power, GrowGPT Premium unleashes the full potential of AI creativity:
+- **Access to Advanced Models:** Elevate your content with access to Claude-3-Opus and GPT-4-Turbo, offering enhanced writing styles, deeper insights, and more nuanced content generation.
+- **Exclusive Features:** Premium users enjoy advanced customization, prioritized processing, and additional tools designed to perfect the content creation process.
 
 **Embrace the future of content creation with GrowGPT — where your imagination is the only limit.** 🌌✨
