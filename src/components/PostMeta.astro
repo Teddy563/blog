@@ -34,7 +34,7 @@ const className = Astro.props.class;
         <div class="flex flex-row flex-nowrap">
             <div><a href=`/archive/category/${category || 'uncategorized'}` aria-label=`View all posts in the ${category} category`
                class="link-lg transition text-50 text-sm font-medium
-                            hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                            hover:text-[var(--primary)] whitespace-nowrap">
                 {category || i18n(I18nKey.uncategorized)}
             </a></div>
         </div>
@@ -52,7 +52,7 @@ const className = Astro.props.class;
             >
                 <a href=`/archive/tag/${tag}` aria-label=`View all posts with the ${tag} tag`
                    class="link-lg transition text-50 text-sm font-medium
-                                hover:text-[var(--primary)] dark:hover:text-[var(--primary)] whitespace-nowrap">
+                                hover:text-[var(--primary)] whitespace-nowrap">
                     {tag}
                 </a>
             </div>)}
