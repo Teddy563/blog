@@ -1,3 +1,4 @@
+import vercel from '@astrojs/vercel/serverless';
 import tailwind from "@astrojs/tailwind"
 import Compress from "astro-compress"
 import icon from "astro-icon"
@@ -23,6 +24,10 @@ const oklchToHex = (str) => {
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
   site: "https://growcreators.net/",
   base: "/",
   integrations: [
